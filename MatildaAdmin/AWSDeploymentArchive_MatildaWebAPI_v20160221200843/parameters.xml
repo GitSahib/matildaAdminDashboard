@@ -1,0 +1,12 @@
+﻿<parameters>
+  <parameter name="IIS Web Application Name" defaultValue="Default Web Site/" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\Users\\Administrator\\Documents\\Visual\ Studio\ 2012\\Projects\\MatildaAPI\\Matilda\.APIHost\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^E:\\Users\\Administrator\\Documents\\Visual\ Studio\ 2012\\Projects\\MatildaAPI\\Matilda\.APIHost\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="MatildaNY-Web.config Connection String" description="MatildaNY Connection String used in web.config by the application to access the database." defaultValue="Data Source=aa176a1auc5aw0j.cwuhshyngbgi.us-east-1.rds.amazonaws.com;Initial Catalog=MatildaNY;Trusted_Connection=false;User ID=Matilda;Password=p@ssword" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Users\\Administrator\\Documents\\Visual\ Studio\ 2012\\Projects\\MatildaAPI\\Matilda\.APIHost\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MatildaNY']/@connectionString" />
+  </parameter>
+  <parameter name="MatildaNYEntities-Web.config Connection String" description="MatildaNYEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/DataContext.MatildaNY.csdl|res://*/DataContext.MatildaNY.ssdl|res://*/DataContext.MatildaNY.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=aa176a1auc5aw0j.cwuhshyngbgi.us-east-1.rds.amazonaws.com;initial catalog=MatildaNY;integrated security=false;User ID=Matilda;Password=p@ssword;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Users\\Administrator\\Documents\\Visual\ Studio\ 2012\\Projects\\MatildaAPI\\Matilda\.APIHost\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MatildaNYEntities']/@connectionString" />
+  </parameter>
+</parameters>
